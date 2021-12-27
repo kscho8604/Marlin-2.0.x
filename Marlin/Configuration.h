@@ -69,7 +69,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "(none, default config)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(BOARD_MKS_BASE for PRUSA i3, MKS Gen-2Z V1.1)" // Who made the changes.
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 /**
@@ -96,7 +96,7 @@
 
 // Choose the name from boards.h that matches your setup
 #ifndef MOTHERBOARD
-  #define MOTHERBOARD BOARD_RAMPS_14_EFB
+  #define MOTHERBOARD BOARD_MKS_BASE  
 #endif
 
 /**
@@ -2105,7 +2105,7 @@
  * SD Card support is disabled by default. If your controller has an SD slot,
  * you must uncomment the following option or it won't work.
  */
-//#define SDSUPPORT
+#define SDSUPPORT
 
 /**
  * SD CARD: ENABLE CRC
@@ -2207,7 +2207,7 @@
 //
 // Note: Usually sold with a white PCB.
 //
-//#define REPRAP_DISCOUNT_SMART_CONTROLLER
+#define REPRAP_DISCOUNT_SMART_CONTROLLER
 
 //
 // GT2560 (YHCB2004) LCD Display
